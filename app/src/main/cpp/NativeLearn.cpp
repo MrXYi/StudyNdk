@@ -6,7 +6,9 @@
 #include "LogUtils.h"
 
 
-void NativeInit(std::string config){
-
-    showLog("我初始化了");
+void NativeInit(std::string config) {
+    int str_long = sizeof(config);
+    char *setKx = new char[str_long];
+    strcpy(setKx, config.c_str());
+    showLog(setKx);
 }

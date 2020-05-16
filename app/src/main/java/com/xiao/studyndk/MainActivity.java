@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements NativeListener {
 
         JNITest.registerListener(this);
 
-        JNITest.init("asdasda");
+        JNITest.init("初始化回调");
 
     }
 
